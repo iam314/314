@@ -1,0 +1,203 @@
+// Custom variables
+@import "custom/variables";
+@import "projects";
+
+// Core custom
+//@import "custom/type";
+//@import "custom/variables";
+
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset
+
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+@font-face {
+    font-family: 'sinkin_sans300_light';
+    src: url('SinkinSans-300Light-webfont.eot');
+    src: url('SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SinkinSans-300Light-webfont.woff') format('woff'),
+         url('SinkinSans-300Light-webfont.ttf') format('truetype'),
+         url('SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sinkin_sans700_bold';
+    src: url('SinkinSans-700Bold-webfont.eot');
+    src: url('SinkinSans-700Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SinkinSans-700Bold-webfont.woff') format('woff'),
+         url('SinkinSans-700Bold-webfont.ttf') format('truetype'),
+         url('SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-size:99%;
+    background-color: white;
+}
+
+::selection {
+    background: $color-red;
+    color: white;
+    text-shadow: none;
+ }
+
+.navigation {
+	margin-top: 4em;
+	margin-bottom: 3em;
+}	
+
+.logo {
+	height: 2.5em;
+//	width: 50em;
+//	-webkit-transition: all 1s ease;
+//-moz-transition: all 1s ease;
+//-o-transition: all 1s ease;
+//transition: all 1s ease;
+}	
+
+//.logo:hover {
+//	background-image: url(img/logo_hover.svg);
+//	background-repeat:no-repeat;
+//	height: 2.5em;
+//	width: 50em;
+//}	
+
+//.logo a:hover {
+//	  -webkit-transition: opacity 0.3s;
+//    -moz-transition: opacity 0.3s;
+//    transition: opacity 0.3s;
+//}	
+
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	font-family: 'sinkin_sans300_light', 'sans-serif';
+	font-weight: 300;
+	font-size: 1.4em;
+	color: $color-black;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+nav ul li a:hover {
+	color: $color-red;
+	padding-bottom: 0.2em;
+	border-bottom: 0.5em solid;
+	text-decoration: none;
+}	
+
+nav li.current a {
+	color: $color-black;
+	padding-bottom: 0.2em;
+	border-bottom: 0.5em solid;
+	text-decoration: none;	
+}
+
+nav li:nth-child(1) {
+	margin-right: 2.5em
+}	
+
+.ido {
+	text-align: center;
+	 font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 400;
+	color: $color-gray;
+	font-size: 1.2em;
+}	
+
+nav .fmenu {
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+footer {
+	margin-top: 7em;
+}	
+
+//TYPE
+
+h1 {
+    font-family: 'Droid Serif', serif;;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 125%;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+//h2 {
+//    font-family: 'sinkin_sans300_light', 'sans-serif';
+//    font-weight: 300;
+//    font-size: 1.4em;
+//    line-height: 125%;
+//    text-align: left;
+//    margin: 0;
+//
+//}
+
+h3 {
+    font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 125%;
+    text-align: left;
+    margin: 2em 0;
+}    
+
+h4 {
+    font-family: 'sinkin_sans300_light', '';
+    font-size: 1.8em;
+    font-weight: 700;
+    color: $color-red;
+    text-transform: uppercase;
+    margin-top: 0;
+
+}    
+
+h5 {
+    margin-top: 0;
+}
+
+h6 {
+    
+}    
+
+p {
+    font-family: 'Droid Serif', 'serif';
+    font-weight: 400;
+    font-size: 1em;
+    
+}    
+
+.footertype {
+	font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    color: $color-gray;
+	letter-spacing: 0.2em;
+    margin-top: 3em;
+}

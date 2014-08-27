@@ -38,11 +38,11 @@
 	display: -moz-flex;
 	display: -ms-flex;
 	display: flex;
-//	-webkit-align-items: center;
-//	-moz-align-items: center;
-//	-ms-align-items: center;
-//    align-items: center;
-//    text-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
     opacity: 0;
 }
 
@@ -51,6 +51,8 @@
 }
 
 .cbp-rfgrid li a div h3 {
+	font-family: 'sinkin_sans300_light', 'sans-serif';
+	font-weight: 300;
 	width: 100%;
 	color: #fff;
 	text-transform: uppercase;

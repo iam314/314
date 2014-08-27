@@ -202,14 +202,26 @@ footer {
 }	
 
 h1 {
-    font-family: 'sinkin_sans700_bold', 'sans-serif';
-    font-weight: 400;
-    font-size: 1.8em;
+    font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 300;
+    font-size: 2.2em;
     line-height: 125%;
     margin-bottom: 2em;
 	color: lighten( $color-black, 15%);
 	letter-spacing:  0.05em;
 }
+
+h2 {
+    font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 300;
+    font-size: 2.2em;
+    line-height: 125%;
+    margin-bottom: 2em;
+	color: lighten( $color-black, 15%);
+	letter-spacing:  0.05em;
+	text-align: center;
+}
+
 
 h3 {
 	font-family: 'sinkin_sans300_light', 'sans-serif';
@@ -221,12 +233,13 @@ p {
     font-weight: 400;
     font-size: 1.6em; 
 	line-height: 150%;
+	letter-spacing: 0.05em;
 	color: lighten( $color-black, 5%);
 }    
 
 .info {
 	margin-top: 15em;
-	max-width: 50em;
+	max-width: 35em;
 }	
 
 .photo {

@@ -207,13 +207,21 @@ h1 {
     font-size: 1.8em;
     line-height: 125%;
     margin-bottom: 2em;
+	color: lighten( $color-black, 15%);
+	letter-spacing:  0.05em;
 }
+
+h3 {
+	font-family: 'sinkin_sans300_light', 'sans-serif';
+	text-transform: none;
+}	
 
 p {
     font-family: 'Droid Serif', 'serif';
     font-weight: 400;
     font-size: 1.6em; 
 	line-height: 150%;
+	color: lighten( $color-black, 5%);
 }    
 
 .info {

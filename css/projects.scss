@@ -1,5 +1,5 @@
 .cbp-rfgrid {
-	margin: 1em 0 0 0;
+	margin: 0 0 0 0;
 	padding: 0;
 	list-style: none;
 	position: relative;
@@ -33,7 +33,7 @@
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.85);
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -81,10 +81,14 @@
 @media screen and (max-width: 945px) {
 	.cbp-rfgrid li {
 		width: 25%; /* Fallback */
-		width: -webkit-calc(100% / 4);
-		width: calc(100% / 4);
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+	.cbp-rfgrid li a:hover div {
+	opacity: 0;
 	}
 }
+
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
@@ -97,8 +101,8 @@
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
 		width: 33.3333333%; /* Fallback */
-		width: -webkit-calc(100% / 3);
-		width: calc(100% / 3);
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
 	}
 }
 

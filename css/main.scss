@@ -197,9 +197,25 @@ footer {
 	text-decoration: none;
 }	
 
-.photo {
-//	margin: 3em;
+.changefont {
+	font-family: 'Droid Serif', 'serif';
+    font-weight: 400;
+	line-height: 150%;
+	letter-spacing: 0.05em;
 }	
+
+.credit {
+	position: absolute;
+	margin-top: -6.5em;
+	text-align: left;
+}	
+
+.projectsomage {
+	margin-top: 5em;
+  	margin-bottom: 7em;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 h1 {
     font-family: 'sinkin_sans300_light', 'sans-serif';
@@ -216,10 +232,12 @@ h2 {
     font-weight: 300;
     font-size: 2.2em;
     line-height: 125%;
-    margin-bottom: 2em;
+	margin-top: 3em;
+    margin-bottom: 1em;
 	color: lighten( $color-black, 15%);
 	letter-spacing:  0.05em;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 
@@ -227,6 +245,19 @@ h3 {
 	font-family: 'sinkin_sans300_light', 'sans-serif';
 	text-transform: none;
 }	
+
+h4 {
+    font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 300;
+    font-size: 2.2em;
+    line-height: 125%;
+    margin-bottom: 1em;
+	color: lighten( $color-black, 15%);
+	letter-spacing:  0.05em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 
 p {
     font-family: 'Droid Serif', 'serif';
@@ -236,6 +267,14 @@ p {
 	letter-spacing: 0.05em;
 	color: lighten( $color-black, 5%);
 }    
+
+.description {
+	font-size: 1.8em;
+	letter-spacing: 0.06em;
+	text-align: center;
+	margin-bottom: 3em;
+	max-width: 35em;
+}	
 
 .info {
 	margin-top: 15em;
@@ -274,7 +313,6 @@ p {
 	width: 100%;
 	background-color: lighten( $color-gray, 15% );
 }
-
 
 @media screen and (max-width: 990px) {
 	.info {
@@ -338,6 +376,10 @@ p {
 		width: 26em;
 	}
 	
+	.ido {
+		font-size: 1em;
+	}
+	
 	.info {
 		margin-top: 5em;
 	}	
@@ -345,6 +387,11 @@ p {
 	.photo {
 		margin-bottom: 0;
 	}	
+	
+	.credit {
+		display: none;
+	}
+	
 	.footerlogo {
 		background-image: url(img/logo.svg);
 		height: 1.9em;

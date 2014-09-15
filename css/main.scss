@@ -23,37 +23,13 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
-@font-face {
-    font-family: 'sinkin_sans300_light';
-    src: url('SinkinSans-300Light-webfont.eot');
-    src: url('SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SinkinSans-300Light-webfont.woff') format('woff'),
-         url('SinkinSans-300Light-webfont.ttf') format('truetype'),
-         url('SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'sinkin_sans700_bold';
-    src: url('SinkinSans-700Bold-webfont.eot');
-    src: url('SinkinSans-700Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SinkinSans-700Bold-webfont.woff') format('woff'),
-         url('SinkinSans-700Bold-webfont.ttf') format('truetype'),
-         url('SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
 	font-size:99%;
     background-color: white;
 }
 
 ::selection {
-    background: $color-red;
+    background: lighten( $color-black, 15%);
     color: white;
     text-shadow: none;
  }
@@ -65,13 +41,14 @@ body {
 
 .topnav {
 	float: right !important;
+	margin-top: 2.7em;
 }
 
 .logo {
 	background-image: url(img/logo.svg);
 	background-repeat: no-repeat;
-	height: 2.7em;
-	width: 27.7em;
+	height: 5em;
+	width: 20em;
 	float: left;
 	cursor: pointer;
 }	
@@ -79,34 +56,40 @@ body {
 .logo:hover {
 	background-image: url(img/logo_hover.svg);
 	background-repeat: no-repeat;
-	height: 2.7em;
-	width: 27.7em;
-}	
+	height: 5em;
+	width: 20em;
+}
+
+.logo:active {   
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}
 
 .navigation ul li {
 	display: inline;
 }
 
 .navigation ul li a {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-	font-weight: 300;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 800;
+	font-size: 1.4em;
 	font-size: 1.4em;
 	color: $color-black;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
+	padding: 0.3em;
 }
 
 .navigation ul li a:hover {
-	color: $color-red;
-	padding-top: 0.2em;
-	border-top: 0.5em solid;
+	color: lighten( $color-black, 90%);
 	text-decoration: none;
 }	
 
 .navigation li.current a {
 	color: $color-black;
-	padding-top: 0.2em;
-	border-top: 0.5em solid;
+	background-color: $color-black;
 	text-decoration: none;	
 }
 
@@ -118,26 +101,24 @@ body {
 .footerlogo {
 	background-image: url(img/logo.svg);
 	background-repeat: no-repeat;
-	height: 2.5em;
-	width: 25em;
+	height: 5em;
+	width: 20em;
 	cursor: pointer;
 }	
 
 .footerlogo:hover {
 	background-image: url(img/logo_hover.svg);
 	background-repeat: no-repeat;
-	height: 2.5em;
-	width: 25em;
-}
+	height: 5em;
+	width: 20em;
+}	
 
-//.ido {
-//	font-family: 'sinkin_sans300_light', 'sans-serif';
-//    font-weight: 300;
-//	text-align: center;
-//	color: $color-gray;
-//	font-size: 1.1em;
-//	margin-top: 1.5em;
-//}		
+.footerlogo:active {
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}
 
 footer {
 	margin-top: 6em;
@@ -155,163 +136,115 @@ footer {
 }	
 
 .footer_navigation ul li a {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-	font-weight: 300;
+	font-family: 'helvetica neue', sans-serif;
+	font-weight: 800;
 	font-size: 1.4em;
 	color: $color-black;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 	text-align:  center;
+	padding: 0.3em;
 }
 
 .footer_navigation ul li a:hover {
-	color: $color-red;
+	color: lighten( $color-black, 90%);
 	text-decoration: none;
-	padding-bottom: 0.2em;
-	border-bottom: 0.5em solid;
+	padding: 0.3em;
 }	
 
 .footer_navigation li.current a {
 	color: $color-black;
-	padding-bottom: 0.2em;
-	border-bottom: 0.5em solid;
+	background-color: $color-black;
+	padding: 0.3em;
 	text-decoration: none;	
 }
 
 .footer_navigation li:nth-child(1) {
 	margin-right: 2.3em
-}
-
-.morework {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-	font-weight: 300;
-	font-size: 1em;
-	color: $color-gray;
-	letter-spacing: 0.15em;
-	text-align: center;
-	margin-top: 3em;
-	width: 22em;
 }	
 
-.morework:hover {
-	text-decoration: none;
-}	
-
-.changefont {
-	font-family: 'Droid Serif', 'serif';
-    font-weight: 400;
-	line-height: 150%;
-	letter-spacing: 0.05em;
-}	
-
-.credit {
-	position: absolute;
-	margin-top: -6.5em;
-	text-align: left;
-}	
-
-.projectsomage {
+.space {
 	margin-top: 5em;
-  	margin-bottom: 7em;
-	margin-left: auto;
-	margin-right: auto;
-}
+}	
 
 h1 {
-    font-family: 'sinkin_sans300_light', 'sans-serif';
-    font-weight: 300;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 800;
     font-size: 2.2em;
     line-height: 125%;
     margin-bottom: 2em;
 	color: lighten( $color-black, 15%);
 	letter-spacing:  0.05em;
-}
-
-h2 {
-    font-family: 'sinkin_sans300_light', 'sans-serif';
-    font-weight: 300;
-    font-size: 2.2em;
-    line-height: 125%;
-	margin-top: 3em;
-    margin-bottom: 1em;
-	color: lighten( $color-black, 15%);
-	letter-spacing:  0.05em;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-
-h3 {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-	text-transform: none;
-}	
-
-h4 {
-    font-family: 'sinkin_sans300_light', 'sans-serif';
-    font-weight: 300;
-    font-size: 2.2em;
-    line-height: 125%;
-    margin-bottom: 1em;
-	color: lighten( $color-black, 15%);
-	letter-spacing:  0.05em;
-	text-align: center;
 	text-transform: uppercase;
 }
 
 
 p {
-    font-family: 'Droid Serif', 'serif';
+    font-family: 'helvetica neue', sans-serif;
     font-weight: 400;
-    font-size: 1.6em; 
-	line-height: 150%;
-	letter-spacing: 0.05em;
+    font-size: 1.7em; 
+	letter-spacing: 0.06em;
+	line-height: 135%;
 	color: lighten( $color-black, 5%);
 }    
+
+.description_home {
+	max-width: 23em;
+}
 
 .description {
 	font-size: 1.8em;
 	letter-spacing: 0.06em;
-	text-align: center;
 	margin-bottom: 3em;
 	max-width: 35em;
 }	
 
 .info {
-	margin-top: 15em;
-	max-width: 35em;
-}	
-
-.photo {
-	margin-top: 5em;
-	margin-bottom: 7em;
-	
+	margin-top: 3em;
+//	max-width: 35em;
 }	
 
 .email {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-	background-color: $color-red; 
-	letter-spacing: 0.25em;
-	padding-top: 2.5em;
-	padding-bottom: 2.5em;
-	color: white;
+	font-family: 'helvetica neue', sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 0.15em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	color: lighten( $color-black, 15%);
 	cursor: pointer;
-	marign-top: 2em;
-	margin-bottom: 2em;
+	marign-top: 1em;
+	margin-bottom: 1em;
 	text-align: center;
 	display: block;
-	width: 26em;
+	width: 18em;
+	border: 0.5em solid lighten( $color-black, 15%);
 }	
 
 .email:hover {
-	background-color: darken( $color-red, 10% );
+	background-color: lighten( $color-black, 15%);
 	color: white;
 	text-decoration: none;
 }	
 
+.delimitador{
+	width:100%;
+	margin:auto;
+	margin-bottom: 3.5em;
+}
+.contenedor{
+	height:0px;
+	width:100%;
+	/*max-width:560px; /* Así establecemos el ancho máximo (si lo queremos) */
+	padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+	position:relative;
+}
 
-.bckgound {
-	width: 100%;
-	background-color: lighten( $color-gray, 15% );
+iframe{
+		position:absolute;
+		height:100%;
+		width:100%;
+		top:0px;
+		left:0px;
 }
 
 @media screen and (max-width: 990px) {
@@ -366,41 +299,30 @@ p {
 @media screen and (max-width: 660px) {
 	
 	.logo {
-		height: 2.5em;
-		width: 26em;
+		height: 5em;
+		width: 20em;
 //		margin-left: 2em;   //	???
 	}	
 
 	.logo:hover {
-		height: 2.5em;
-		width: 26em;
+		height: 5em;
+		width: 20em;
 	}
-	
-//	.ido {
-//		font-size: 1em;
-//	}
 	
 	.info {
 		margin-top: 5em;
 	}	
 	
-	.photo {
-		margin-bottom: 0;
-	}	
-	
-	.credit {
-		display: none;
-	}
 	
 	.footerlogo {
 		background-image: url(img/logo.svg);
-		height: 1.9em;
-		width: 19em;
+		height: 5em;
+		width: 20em;
 	}
 	
 	.footerlogo:hover {
-		height: 1.9em;
-	width: 19em;
+		height: 5em;
+		width: 20em;
 	}	
 	
 	.footer_navigation ul li a {
@@ -415,10 +337,6 @@ p {
 	.footer_navigation li.current a {
 		border-bottom: none;
 	}
-	
-	.morework {
-		margin-top: 2em;
-	}	
 }		
 
 @media screen and (max-width: 400px) {
@@ -434,7 +352,6 @@ p {
 	}
 	
 	.navigation ul li a {
-		font-family: 'sinkin_sans700_bold', 'sans-serif';
 		font-size: 1.2em;
 		letter-spacing: 0.1em;
 	}	

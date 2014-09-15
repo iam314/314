@@ -113,12 +113,23 @@ body {
 	width: 20em;
 }	
 
+<<<<<<< HEAD
 .footerlogo:active {
 	background-image: url(img/logo_hover.svg);
 	background-repeat: no-repeat;
 	height: 5em;
 	width: 20em;
 }
+=======
+.ido {
+	font-family: 'sinkin_sans300_light', 'sans-serif';
+    font-weight: 300;
+	text-align: center;
+	color: $color-gray;
+	font-size: 1.1em;
+	margin-top: 1.5em;
+}		
+>>>>>>> parent of 220eb62... added google Analytics
 
 footer {
 	margin-top: 6em;
@@ -132,7 +143,7 @@ footer {
 .footer_navigation ul {
 	padding: 0;
 	text-align: center;
-	margin-top: 3.4em;
+	margin-top: 1.5em;
 }	
 
 .footer_navigation ul li a {
@@ -309,6 +320,13 @@ iframe{
 		width: 20em;
 	}
 	
+<<<<<<< HEAD
+=======
+	.ido {
+		font-size: 1em;
+	}
+	
+>>>>>>> parent of 220eb62... added google Analytics
 	.info {
 		margin-top: 5em;
 	}	

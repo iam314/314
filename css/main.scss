@@ -126,9 +126,8 @@ body {
 .footerlogo:hover {
 	background-image: url(img/logo_hover.svg);
 	background-repeat: no-repeat;
-
-	height: 5em;
-	width: 20em;
+	height: 2.5em;
+	width: 25em;
 }	
 
 
@@ -137,29 +136,10 @@ body {
 	background-repeat: no-repeat;
 	height: 5em;
 	width: 20em;
-
 	height: 2.5em;
 	width: 25em;
 
 }
-.ido {
-	font-family: 'sinkin_sans300_light', 'sans-serif';
-    font-weight: 300;
-	text-align: center;
-	color: $color-gray;
-	font-size: 1.1em;
-	margin-top: 1.5em;
-}		
-
-
-//.ido {
-//	font-family: 'sinkin_sans300_light', 'sans-serif';
-//    font-weight: 300;
-//	text-align: center;
-//	color: $color-gray;
-//	font-size: 1.1em;
-//	margin-top: 1.5em;
-//}		
 
 footer {
 	margin-top: 6em;
@@ -173,7 +153,7 @@ footer {
 .footer_navigation ul {
 	padding: 0;
 	text-align: center;
-	margin-top: 1.5em;
+	margin-top: 3.4em;
 }	
 
 .footer_navigation ul li a {
@@ -280,7 +260,6 @@ h4 {
 	text-transform: uppercase;
 }
 
-
 p {
     font-family: 'Droid Serif', 'serif';
     font-weight: 400;
@@ -325,7 +304,7 @@ p {
 }	
 
 .email:hover {
-	background-color: darken( $color-red, 10% );
+	background-color: darken( $color-red, 12% );
 	color: white;
 	text-decoration: none;
 }	
@@ -398,15 +377,6 @@ p {
 		width: 26em;
 	}
 	
-
-	.ido {
-		font-size: 1em;
-	}
-	
-
-//	.ido {
-//		font-size: 1em;
-//	}
 	
 	.info {
 		margin-top: 5em;
@@ -453,7 +423,6 @@ p {
 	.topnav {
 		float: none !important;
 		padding-left: 0;
-//		text-align: center;
 		margin-top: 3em;
 	}	
 	
